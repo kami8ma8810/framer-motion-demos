@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import React, { useEffect, useState } from 'react';
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
 
 //Components
-import ScrollForMore from "../components/scrollForMore";
+import ScrollForMore from '../components/scrollForMore';
 //Ease
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 
@@ -52,9 +52,9 @@ const Model = ({ imageDetails }) => {
 
   useEffect(() => {
     if (canScroll === false) {
-      document.querySelector("body").classList.add("no-scroll");
+      document.querySelector('body').classList.add('no-scroll');
     } else {
-      document.querySelector("body").classList.remove("no-scroll");
+      document.querySelector('body').classList.remove('no-scroll');
     }
   }, [canScroll]);
 
@@ -64,7 +64,8 @@ const Model = ({ imageDetails }) => {
       className='single'
       initial='initial'
       animate='animate'
-      exit='exit'>
+      exit='exit'
+    >
       <div className='container fluid'>
         <div className='row center top-row'>
           <div className='top'>
@@ -75,7 +76,8 @@ const Model = ({ imageDetails }) => {
                 y: 0,
                 transition: { delay: 1.2, ...transition },
               }}
-              className='details'>
+              className='details'
+            >
               <div className='location'>
                 <span>28.538336</span>
                 <span>-81.379234</span>
@@ -107,23 +109,25 @@ const Model = ({ imageDetails }) => {
             <motion.div className='image-container-single'>
               <motion.div
                 initial={{
-                  y: "-50%",
+                  y: '-50%',
                   width: imageDetails.width,
                   height: imageDetails.height,
                 }}
                 animate={{
                   y: 0,
-                  width: "100%",
+                  width: '100%',
                   height: window.innerWidth > 1440 ? 800 : 400,
                   transition: { delay: 0.2, ...transition },
                 }}
-                className='thumbnail-single'>
+                className='thumbnail-single'
+              >
                 <motion.div
                   className='frame-single'
                   whileHover='hover'
-                  transition={transition}>
+                  transition={transition}
+                >
                   <motion.img
-                    src={require("../images/yasmeen.webp")}
+                    src={require('../images/lion.jpg')}
                     alt='an image'
                     style={{ scale: scale }}
                     initial={{ scale: 1.0 }}
