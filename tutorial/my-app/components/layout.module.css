@@ -10,7 +10,6 @@
   align-items: center;
   justify-content: center;
 }
-
-.backToHome {
-  margin: 3rem 0 0;
+.main {
+  text-align: center;
 }
