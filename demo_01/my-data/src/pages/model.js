@@ -69,21 +69,6 @@ const Model = ({ imageDetails }) => {
       <div className='container fluid'>
         <div className='row center top-row'>
           <div className='top'>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{
-                opacity: 1,
-                y: 0,
-                transition: { delay: 1.2, ...transition },
-              }}
-              className='details'
-            >
-              <div className='location'>
-                <span>28.538336</span>
-                <span>-81.379234</span>
-              </div>
-              <div className='mua'>MUA: @mylifeascrystall</div>
-            </motion.div>
             <motion.div className='model'>
               <motion.span className='first' variants={firstName}>
                 <motion.span variants={letter}>Y</motion.span>

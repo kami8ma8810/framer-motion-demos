@@ -43,10 +43,6 @@ const Home = ({ imageDetails, image }) => (
               className='information'
             >
               <div className='title'>Yasmeen Tariq</div>
-              <div className='location'>
-                <span>28.538336</span>
-                <span>-81.379234</span>
-              </div>
             </motion.div>
           </div>
         </div>
