@@ -16,7 +16,7 @@
     "intersection-observer": "^0.12.0",
     "lodash": "^4.17.21",
     "markdown-to-jsx": "^7.1.3",
-    "next": "11.1.2",
+    "next": "^11.1.4",
     "normalize-wheel": "^1.0.1",
     "prefix": "^1.0.0",
     "react": "17.0.2",
@@ -44,5 +44,8 @@
     "raw-loader": "^4.0.2",
     "sass": "^1.42.1",
     "typescript": "4.4.3"
+  },
+  "volta": {
+    "node": "14.21.1"
   }
 }
